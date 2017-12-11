@@ -39,7 +39,7 @@ public class UserDao {
         return null;
     }
 
-    public void changeLastTime(long time, String login){
+    public void changeLastTime(long time, String login) {
         Connection connection = DBHelper.getInstance().getConnection();
         try (PreparedStatement statement = connection.prepareStatement("UPDATE USERS SET LASTTIME = (?) WHERE LOGIN = (?)")) {
             statement.setLong(1, time);

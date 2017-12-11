@@ -39,18 +39,18 @@ public class GreetingsServlet extends HttpServlet {
             req.setAttribute("dateLastTimeWas", "Вы у нас впервые");
         }
 
-        req.setAttribute("viewCount", viewCount);
+        req.setAttribute("viewCount", viewCount / 2);
         req.setAttribute("name", login);
 
         Date date = new Date();
         SimpleDateFormat hour = new SimpleDateFormat("HH");
-        if (Integer.valueOf(hour.format(date)) < 6){
+        if (Integer.valueOf(hour.format(date)) < 6) {
             req.setAttribute("greeting", "Доброй ночи");
-        } else if (Integer.valueOf(hour.format(date)) <= 10){
+        } else if (Integer.valueOf(hour.format(date)) <= 10) {
             req.setAttribute("greeting", "Доброе утро");
-        } else if ((Integer.valueOf(hour.format(date)) <= 18)){
+        } else if ((Integer.valueOf(hour.format(date)) <= 18)) {
             req.setAttribute("greeting", "Добрый день");
-        } else if ((Integer.valueOf(hour.format(date)) <= 22)){
+        } else if ((Integer.valueOf(hour.format(date)) <= 22)) {
             req.setAttribute("greeting", "Добрый вечер");
         } else {
             req.setAttribute("greeting", "Доброй ночи");
