@@ -39,7 +39,6 @@ public class SignUpServlet extends HttpServlet {
         if (isLoginFree(login)) {
             if (!isLoginValid(login)) {
                 req.setAttribute("info2", "Имя пользователя должно быть длиннее 4 символов и состоять из цифр, букв английского алфавита и точек");
-                doGet(req, resp);
             }
         } else {
             req.setAttribute("info2", "Логин занят");
