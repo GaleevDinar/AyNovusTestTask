@@ -27,6 +27,20 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="Maven: org.apache.tomcat.embed:tomcat-embed-core:8.5.23" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.tomcat:tomcat-annotations-api:8.5.23" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.tomcat.embed:tomcat-embed-jasper:8.5.23" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.tomcat.embed:tomcat-embed-el:8.5.23" level="project" />
+    <orderEntry type="library" name="Maven: org.eclipse.jdt:ecj:3.12.3" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.tomcat:tomcat-jasper:8.5.23" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.tomcat:tomcat-servlet-api:8.5.23" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.tomcat:tomcat-juli:8.5.23" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.tomcat:tomcat-el-api:8.5.23" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.tomcat:tomcat-api:8.5.23" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.tomcat:tomcat-util-scan:8.5.23" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.tomcat:tomcat-util:8.5.23" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.tomcat:tomcat-jasper-el:8.5.23" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.tomcat:tomcat-jsp-api:8.5.23" level="project" />
     <orderEntry type="library" name="Maven: com.h2database:h2:1.4.196" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: javax.servlet:javax.servlet-api:3.1.0" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: jstl:jstl:1.2" level="project" />

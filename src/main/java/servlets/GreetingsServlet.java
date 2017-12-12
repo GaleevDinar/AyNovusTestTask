@@ -1,6 +1,5 @@
 package servlets;
 
-import com.sun.istack.internal.Nullable;
 import dbservice.dao.UserDao;
 import dbservice.model.User;
 
@@ -71,7 +70,6 @@ public class GreetingsServlet extends HttpServlet {
         return ++viewCount;
     }
 
-    @Nullable
     private long lastTime(String login) {
         User user = dao.getUserByLogin(login);
         return user.getLastTime();
