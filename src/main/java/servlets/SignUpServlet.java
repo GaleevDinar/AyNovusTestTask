@@ -32,16 +32,20 @@ public class SignUpServlet extends HttpServlet {
         if (checkPasswordForEquals(password, repeatPassword)) {
             if (!isPasswordValid(password)) {
                 req.setAttribute("info", "Пароль недостаточно сложен: должны быть цифры, заглавные и строчные буквы и длина минимум 8 символов");
+                doGet(req, resp);
             }
         } else {
             req.setAttribute("info", "Пароли не совпадают");
+            doGet(req, resp);
         }
         if (isLoginFree(login)) {
             if (!isLoginValid(login)) {
                 req.setAttribute("info2", "Имя пользователя должно быть длиннее 4 символов и состоять из цифр, букв английского алфавита и точек");
+                doGet(req, resp);
             }
         } else {
             req.setAttribute("info2", "Логин занят");
+            doGet(req, resp);
         }
         if (isLoginFree(login) && isLoginValid(login) && checkPasswordForEquals(password, repeatPassword) && isPasswordValid(password)) {
             dao.addUser(new User(login, password));
@@ -49,7 +53,6 @@ public class SignUpServlet extends HttpServlet {
             session.setAttribute("login", login);
             resp.sendRedirect("/greetings");
         }
-        doGet(req, resp);
     }
 
     protected boolean isLoginFree(String login) {
